@@ -1,0 +1,43 @@
+@import '../../../css/globalStyles.less';
+
+.navigation{
+    width: 100%;
+    padding:19px 25px;
+    &__bread{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--text{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin-right: 12px;
+                    &:nth-child(1) {
+                        color:@colorPrincipal;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &--icons{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    border: 1px solid white;
+                    display: flex;
+                    padding:4px;
+                    align-items: center;
+                    &:nth-child(1) {
+                        background:@colorPrincipal;
+                    }
+                    &:hover{
+                        border: 1px solid @colorPrincipal;
+                    }
+                }
+            }
+        }
+    }
+
+}
